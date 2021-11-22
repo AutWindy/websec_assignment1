@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>jsonp</title>
+</head>
+<style>
+body{text-align:center}
+</style>
+<body>
+  <h1>jsonp</h1>
+  <script>
+    function getDate(data) {
+      alert(`{\"date\":${data}}`)
+    }
+  </script>
+  <script src="http://time.cybersecurity.seu.edu/api/jsonpdate?callback=getDate"></script>
+</body>
+
+</html>
